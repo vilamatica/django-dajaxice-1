@@ -5,7 +5,7 @@ from django.middleware.csrf import get_token
 from django.conf import settings
 from django.core.files.storage import get_storage_class
 try:
-    from django.core.urls import reverse
+    from django.urls import reverse
 except ImportError:
     from django.core.urlresolvers import reverse # noqa
 from django.utils.safestring import mark_safe
